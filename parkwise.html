@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Vehicles Wisely</title>
+    <link rel="stylesheet" href="parkwise.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 ParkWise Pro🚗</h1>
+
+        <div class="controls">
+            <h2 style="text-align: center;">Create Parking Slots</h2>
+            <br>
+            <label for="carType">Vehicle Type:</label>
+            <select id="carType">
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Truck">Truck</option>
+                <option value="Minivan">Minivan</option>
+            </select>
+            <label for="slots", style="text-align: center;">Number of Slots:</label>
+            <input type="number" id="slots" min="1" value="5">
+
+            <button id="createSlotsBtn", style="text-align: center;">Create Slots</button>
+        </div>
+
+        <div class="controls">
+            <h2 style="text-align: center;">Park a Vehicle</h2> <br>
+            <label for="carName">Vehicle Name:</label>
+            <input type="text" id="carName" placeholder="Enter vehicle name">
+
+            <label for="parkCarType">Vehicle Type:</label>
+            <select id="parkCarType">
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Truck">Truck</option>
+                <option value="Minivan">Minivan</option>
+            </select>
+
+            <button id="parkCarBtn">Park Vehicle</button>
+        </div>
+
+        <div class="controls">
+            <h2 style="text-align: center;">Leave a Vehicle</h2><br>
+            <label for="leaveCarName">Vehicle Name:</label>
+            <input type="text" id="leaveCarName" placeholder="Enter vehicle name">
+            <button id="leaveCarBtn">Leave Parking</button>
+        </div>
+
+        <div class="controls">
+            <h2 style="text-align: center;">Reserve a Parking Slot</h2><br>
+            <label for="reserveCarName">Vehicle Name:</label>
+            <input type="text" id="reserveCarName" placeholder="Enter vehicle name">
+        
+            <label for="reserveCarType">Vehicle Type:</label>
+            <select id="reserveCarType">
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Truck">Truck</option>
+                <option value="Minivan">Minivan</option>
+            </select>
+        
+            <label for="reserveTime">Reservation Duration (in minutes):</label>
+            <input type="number" id="reserveTime" min="1" value="30">
+        
+            <button id="reserveSlotBtn">Reserve Slot</button>
+        </div>
+        <div id="parkingStatus">
+            <h2 style="text-align: center;">Parking Lot Status</h2>
+            <div id="slotsContainer"></div>
+        </div>
+
+        <div id="realTimeStatus">
+            <h2 style="text-align: center;">Real-Time Slot Availability</h2>
+            <div id="slotAvailability"></div>
+        </div>
+    </div>
+    
+
+    <script src="parkwise.js"></script>
+</body>
+</html>
