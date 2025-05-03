@@ -1,4 +1,4 @@
-# 🚗 ParkWise – Smart Parking Management System
+# 🚗 ParkWisePro – Smart Parking Management System
 
 **ParkWise** is a responsive and interactive web-based application that simplifies parking lot management. It allows users to dynamically create parking slots, park and remove vehicles, reserve spaces, and calculate parking fares in real-time—all through a clean and intuitive interface.
 
@@ -32,6 +32,7 @@
 Open parkwise.html in any modern web browser.
 
 Start creating slots, parking cars, reserving spaces, and managing your lot efficiently!
+
 ![image](https://github.com/user-attachments/assets/9d1a155f-c4cd-4ec9-acd2-b6a9f203db7b)
 ![image](https://github.com/user-attachments/assets/27ca2acb-503a-4abd-a6fa-1a82bdb5b8f4)
 ![image](https://github.com/user-attachments/assets/b3a8f992-e310-4fd0-bd74-d50c0d654fc2)
